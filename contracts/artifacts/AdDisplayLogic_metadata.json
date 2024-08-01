@@ -1,0 +1,164 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"name": "AdRequested",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					}
+				],
+				"name": "getUserDetails",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "preferences",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "consent",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "adAttributes",
+						"type": "uint256"
+					}
+				],
+				"name": "registerUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "requestAd",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "users",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "preferences",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "consent",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "adAttributes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "exists",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/addisplay.sol": "AdDisplayLogic"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/addisplay.sol": {
+			"keccak256": "0x34b15bf43eb20c74c5a2e22b52e530c371031fdf32a58d97de3fa5b7808b655d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://af5216a4dddcc154e165602519defef6156a33743747ff9413ea4074c49cf644",
+				"dweb:/ipfs/QmUDymMCXmSXq8pCdk4gfYbFNaksHZae1QL9CBFDaduQ5u"
+			]
+		}
+	},
+	"version": 1
+}

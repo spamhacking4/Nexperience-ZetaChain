@@ -1,0 +1,194 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "dAppOwner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "slotId",
+						"type": "uint256"
+					}
+				],
+				"name": "AdSlotCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "InitializationCompleted",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_dAppOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_slotId",
+						"type": "uint256"
+					}
+				],
+				"name": "adSlotExists",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createAdSlot",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "dAppOwners",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isOwner",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_dAppOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_slotId",
+						"type": "uint256"
+					}
+				],
+				"name": "getAdSlotDetails",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_dAppOwner",
+						"type": "address"
+					}
+				],
+				"name": "getSlotIds",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "registerDAppOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "slotCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/adslot.sol": "AdSlotManagement"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/adslot.sol": {
+			"keccak256": "0x6976bd2c1b69dca153f076ca25d8c31625d000efe7709f17612e382b8dd1d40d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2bf76979fda81c80218dfe72de37ac89f62e6a4a62b1ef21233c359084ea81cf",
+				"dweb:/ipfs/QmPSZ8y2JwmEpzhezgSvDJno8kRgFid6ZJ1hWYi52s6Vi9"
+			]
+		}
+	},
+	"version": 1
+}
